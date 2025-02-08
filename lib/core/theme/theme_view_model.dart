@@ -14,6 +14,7 @@ class ThemeViewModel extends _$ThemeViewModel {
     );
   }
 
+  // 테마 변경 메서드
   void toggleTheme() {
     state = ThemeState(
       isDarkMode: !state.isDarkMode,
@@ -21,6 +22,7 @@ class ThemeViewModel extends _$ThemeViewModel {
     );
   }
 
+  // 라이트 테마 반환
   ThemeData _getLightTheme() {
     return ThemeData(
       brightness: Brightness.light,
@@ -32,6 +34,7 @@ class ThemeViewModel extends _$ThemeViewModel {
     );
   }
 
+  // 다크 테마 반환
   ThemeData _getDarkTheme() {
     return ThemeData(
       brightness: Brightness.dark,
