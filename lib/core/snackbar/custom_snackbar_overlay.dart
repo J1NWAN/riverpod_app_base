@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:riverpod_app_base/core/widget/snackbar/enum/snackbar_position.dart';
-import 'package:riverpod_app_base/core/widget/snackbar/model/snackbar_config.dart';
+import 'package:riverpod_app_base/core/snackbar/enum/snackbar_position.dart';
+import 'package:riverpod_app_base/core/snackbar/model/snackbar_config.dart';
 
 class CustomSnackBarOverlay extends StatefulWidget {
   final SnackBarConfig config;
