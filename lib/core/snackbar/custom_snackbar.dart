@@ -4,6 +4,17 @@ import 'package:riverpod_app_base/core/snackbar/enum/snackbar_position.dart';
 import 'package:riverpod_app_base/core/snackbar/enum/snackbar_type.dart';
 import 'package:riverpod_app_base/core/snackbar/model/snackbar_config.dart';
 
+/// 커스텀 스낵바
+///
+/// 사용법
+///
+/// CustomSnackBar.show(
+///   context,
+///   title: '제목',
+///   message: '메시지',
+///   type: 타입,
+///   position: 위치,
+///   duration: 지속시간,
 class CustomSnackBar {
   static void show(
     BuildContext context, {
