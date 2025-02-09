@@ -7,40 +7,40 @@ Riverpod App Base는 Riverpod를 사용한 앱 개발을 위한 기본 프로젝
 ## 프로젝트 구조
 ```
 📦lib
- ┣ 📂core
- ┃ ┣ 📂dialog
+ ┣ 📂core                                       # 공통 기능
+ ┃ ┣ 📂dialog                                   # 다이얼로그
  ┃ ┃ ┗ 📜custom_dialog.dart
- ┃ ┣ 📂snackbar
+ ┃ ┣ 📂snackbar                                 # 스낵바
  ┃ ┃ ┣ 📂enum
  ┃ ┃ ┃ ┣ 📜snackbar_position.dart
  ┃ ┃ ┃ ┗ 📜snackbar_type.dart
- ┃ ┃ ┣ 📂model
+ ┃ ┃ ┣ 📂model                                  # 모델
  ┃ ┃ ┃ ┗ 📜snackbar_config.dart
  ┃ ┃ ┣ 📜custom_snackbar.dart
  ┃ ┃ ┗ 📜custom_snackbar_overlay.dart
- ┃ ┣ 📂theme
+ ┃ ┣ 📂theme                                    # 테마
  ┃ ┃ ┣ 📜theme_state.dart
  ┃ ┃ ┣ 📜theme_view_model.dart
  ┃ ┃ ┗ 📜theme_view_model.g.dart
- ┃ ┗ 📂toast
+ ┃ ┗ 📂toast                                    # 토스트
  ┃ ┃ ┣ 📂enum
  ┃ ┃ ┃ ┗ 📜toast_type.dart
  ┃ ┃ ┣ 📜custom_toast.dart
  ┃ ┃ ┗ 📜custom_toast_overlay.dart
- ┣ 📂features
- ┃ ┣ 📂auth
+ ┣ 📂features                                   # 기능
+ ┃ ┣ 📂auth                                     # 인증
  ┃ ┃ ┣ 📂model
  ┃ ┃ ┣ 📂repository
  ┃ ┃ ┣ 📂view
  ┃ ┃ ┣ 📂viewmodel
  ┃ ┃ ┗ 📜.DS_Store
- ┃ ┗ 📂home
+ ┃ ┗ 📂home                                     # 홈
  ┃ ┃ ┣ 📂model
  ┃ ┃ ┣ 📂repository
  ┃ ┃ ┣ 📂view
  ┃ ┃ ┣ 📂viewmodel
  ┃ ┃ ┗ 📜.DS_Store
- ┣ 📂shared
+ ┣ 📂shared                                     # 공유
  ┃ ┣ 📂extensions
  ┃ ┗ 📂widget
  ┣ 📜app.dart
