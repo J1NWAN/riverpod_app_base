@@ -22,7 +22,7 @@ Riverpod App Base는 Riverpod를 사용한 앱 개발을 위한 기본 프로젝
  ┃ ┃ ┣ 📜theme_state.dart
  ┃ ┃ ┣ 📜theme_view_model.dart
  ┃ ┃ ┗ 📜theme_view_model.g.dart
- ┃ ┗ 📂toast                                    # 토스트
+ ┃ ┗ 📂toast                                    # 토스트 메시지
  ┃ ┃ ┣ 📂enum
  ┃ ┃ ┃ ┗ 📜toast_type.dart
  ┃ ┃ ┣ 📜custom_toast.dart
