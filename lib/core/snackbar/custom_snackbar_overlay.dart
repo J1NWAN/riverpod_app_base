@@ -105,12 +105,14 @@ class _CustomSnackBarOverlayState extends State<CustomSnackBarOverlay> with Sing
                             ),
                             const SizedBox(width: 12),
                             Expanded(
-                              child: Text(
-                                widget.config.title,
+                              child: DefaultTextStyle(
                                 style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
+                                ),
+                                child: Text(
+                                  widget.config.title,
                                 ),
                               ),
                             ),
@@ -119,11 +121,13 @@ class _CustomSnackBarOverlayState extends State<CustomSnackBarOverlay> with Sing
                         ),
                         if (widget.config.message.isNotEmpty) ...[
                           const SizedBox(height: 8),
-                          Text(
-                            widget.config.message,
+                          DefaultTextStyle(
                             style: const TextStyle(
                               color: Colors.white,
                               fontSize: 14,
+                            ),
+                            child: Text(
+                              widget.config.message,
                             ),
                           ),
                         ],
