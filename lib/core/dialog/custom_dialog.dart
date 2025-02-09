@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DialogUtil {
-  static Future<bool?> showCustomDialog(
+class CustomDialog {
+  static Future<bool?> show(
     BuildContext context, {
     required String title,
     required String content,
