@@ -1,16 +1,48 @@
-# riverpod_app_base
+# Riverpod App Base
 
-A new Flutter project.
+## 소개
 
-## Getting Started
+Riverpod App Base는 Riverpod를 사용한 앱 개발을 위한 기본 프로젝트입니다.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 프로젝트 구조
+```
+📦lib
+ ┣ 📂core
+ ┃ ┣ 📂dialog
+ ┃ ┃ ┗ 📜custom_dialog.dart
+ ┃ ┣ 📂snackbar
+ ┃ ┃ ┣ 📂enum
+ ┃ ┃ ┃ ┣ 📜snackbar_position.dart
+ ┃ ┃ ┃ ┗ 📜snackbar_type.dart
+ ┃ ┃ ┣ 📂model
+ ┃ ┃ ┃ ┗ 📜snackbar_config.dart
+ ┃ ┃ ┣ 📜custom_snackbar.dart
+ ┃ ┃ ┗ 📜custom_snackbar_overlay.dart
+ ┃ ┣ 📂theme
+ ┃ ┃ ┣ 📜theme_state.dart
+ ┃ ┃ ┣ 📜theme_view_model.dart
+ ┃ ┃ ┗ 📜theme_view_model.g.dart
+ ┃ ┗ 📂toast
+ ┃ ┃ ┣ 📂enum
+ ┃ ┃ ┃ ┗ 📜toast_type.dart
+ ┃ ┃ ┣ 📜custom_toast.dart
+ ┃ ┃ ┗ 📜custom_toast_overlay.dart
+ ┣ 📂features
+ ┃ ┣ 📂auth
+ ┃ ┃ ┣ 📂model
+ ┃ ┃ ┣ 📂repository
+ ┃ ┃ ┣ 📂view
+ ┃ ┃ ┣ 📂viewmodel
+ ┃ ┃ ┗ 📜.DS_Store
+ ┃ ┗ 📂home
+ ┃ ┃ ┣ 📂model
+ ┃ ┃ ┣ 📂repository
+ ┃ ┃ ┣ 📂view
+ ┃ ┃ ┣ 📂viewmodel
+ ┃ ┃ ┗ 📜.DS_Store
+ ┣ 📂shared
+ ┃ ┣ 📂extensions
+ ┃ ┗ 📂widget
+ ┣ 📜app.dart
+ ┗ 📜main.dart
+```
