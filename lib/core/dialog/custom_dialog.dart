@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:riverpod_app_base/core/button/custom_dropdown_button.dart';
+import 'package:riverpod_app_base/core/dialog/custom_dialog_overlay.dart';
+import 'package:riverpod_app_base/core/textfield/model/text_field_config.dart';
+import 'package:riverpod_app_base/core/dialog/model/dialog_config.dart';
 
 /*
  * 커스텀 다이얼로그
@@ -18,27 +22,33 @@ class CustomDialog {
     BuildContext context, {
     required String title,
     required String content,
+    CustomDropDownButton? dropdown,
+    List<CustomTextField>? textFields,
+    Color? backgroundColor,
+    IconData? icon,
+    bool showIcon = true,
     String? confirmText,
     String? cancelText,
+    VoidCallback? onConfirm,
+    VoidCallback? onCancel,
   }) async {
+    final config = DialogConfig(
+      title: title,
+      content: content,
+      dropdown: dropdown,
+      textFields: textFields,
+      backgroundColor: backgroundColor,
+      icon: icon,
+      showIcon: showIcon,
+      confirmText: confirmText,
+      cancelText: cancelText,
+      onConfirm: onConfirm,
+      onCancel: onCancel,
+    );
+
     return showDialog<bool>(
       context: context,
-      builder: (context) => AlertDialog(
-        title: Text(title),
-        content: Text(content),
-        actions: [
-          if (cancelText != null)
-            TextButton(
-              onPressed: () => Navigator.pop(context, false),
-              child: Text(cancelText),
-            ),
-          if (confirmText != null)
-            TextButton(
-              onPressed: () => Navigator.pop(context, true),
-              child: Text(confirmText),
-            ),
-        ],
-      ),
+      builder: (context) => CustomDialogOverlay(config: config),
     );
   }
 }
